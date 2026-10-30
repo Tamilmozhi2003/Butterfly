@@ -1,0 +1,46 @@
+/* ==========================================================================
+   BUTTERFLY PARTICLE ANIMATION STYLES (PORTED FROM butterfly.py)
+   Exact Background: #02010b (Deep Cosmic Space Black)
+   Pure animation mode - all overlays removed
+   ========================================================================== */
+
+/* Overrides to ensure root fits the full viewport seamlessly */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #02010b;
+  overflow: hidden;
+}
+
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-inline: none !important;
+  min-height: 100vh !important;
+  background-color: #02010b !important;
+}
+
+.butterfly-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #02010b;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Background HTML5 Canvas */
+.butterfly-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
